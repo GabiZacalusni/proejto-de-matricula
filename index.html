@@ -27,115 +27,163 @@
           </p>
           <form enctype="multipart/form-data">
             <fieldset class="child-info">
-               <legend>Informações da Criança</legend>
-               <div class="input-wrapper">
+              <legend>Informações da Criança</legend>
+              <div class="input-wrapper">
                 <label for="fullname">Nome Completo</label>
-                <input id="fullname" type="text" placeholder="Qual o nome da criança" name="fullname">
-
-               </div>
-               <div class="input-wrapper">
+                <input
+                  id="fullname"
+                  type="text"
+                  placeholder="Qual o nome da criança"
+                  name="fullname"
+                />
+              </div>
+              <div class="input-wrapper">
                 <label for="birth">Data de nascimento</label>
-                <input type="date" id="birth" name="birth">
-               </div>
-               <div class="select-wrapper">
+                <input type="date" id="birth" name="birth" />
+              </div>
+              <div class="select-wrapper">
                 <label for="gender">Sexo</label>
                 <select name="gender" id="gender">
                   <option value="female">Feminino</option>
                   <option value="male">Masculino</option>
                   <option value="na">Prefiro não responder</option>
                 </select>
-               </div>
-
-               <div class="textarea-wrapper">
-                <label for="medical-info">Informações médicas</label>
-                <textarea name="medical-info" id="medical-info" placeholder="a criança possui alguma condição médica" cols="30" rows="5"></textarea>
-               </div>
-
-               <div class="droparea-wrapper">
-                <label for="birth-file">Certidão de Nascimento</label>
-                <div class="dropzone">
-
-                <input type="file" id="birth-file" name="birth-file">
-                <img src="./icons/cloud-upload.svg">
-                <p>clique aqui para <br> selecionar os arquivos</p>
-               </div>
               </div>
 
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informações médicas</label>
+                <textarea
+                  name="medical-info"
+                  id="medical-info"
+                  placeholder="a criança possui alguma condição médica"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
 
+              <div class="droparea-wrapper">
+                <label for="birth-file">Certidão de Nascimento</label>
+                <div class="dropzone">
+                  <input type="file" id="birth-file" name="birth-file" />
+                  <img src="./icons/cloud-upload.svg" />
+                  <p>
+                    clique aqui para <br />
+                    selecionar os arquivos
+                  </p>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="adress">
               <legend>Endereço Residencial</legend>
               <div class="input-wrapper">
                 <label for="cep">CEP</label>
-                <input type="text" id="cep" name="cep">
+                <input type="text" id="cep" name="cep" />
               </div>
 
               <div class="flex">
-                <div class="input-wrapper flex-2" >
+                <div class="input-wrapper flex-2">
                   <label for="street">Rua</label>
-                  <input type="text" id="street" name="street"
-                  value="Rua das Flores" disabled>
+                  <input
+                    type="text"
+                    id="street"
+                    name="street"
+                    value="Rua das Flores"
+                    disabled
+                  />
                 </div>
-              
+
                 <div class="input-wrapper flex-1">
                   <label for="number">Número</label>
-                  <input type="number" id="number" name="number">
+                  <input type="number" id="number" name="number" />
                 </div>
               </div>
-              
-                  <div class="flex">
-                  <div class="input-wrapper flex-2">
-                    <label for="city">Cidade</label>
-                    <input type="text" id="city" name="city" value="São Paulo" disabled>
-                  </div>
-              
-                
-                
-                    <div class="input-wrapper flex-1">
-                      <label for="state">Estado</label>
-                      <input type="text" id="state" name="state" value="SP" disabled>
-                    </div>
-                  </div>
-                  
-              
+
+              <div class="flex">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    value="São Paulo"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    value="SP"
+                    disabled
+                  />
+                </div>
+              </div>
             </fieldset>
             <fieldset class="gardian">
-               <legend>Informações do Responsável</legend>
-               <div class="input-wrapper">
+              <legend>Informações do Responsável</legend>
+              <div class="input-wrapper">
                 <label for="gardian">Nome do responsável</label>
-                <input type="text" id="gardian" name="gardian"><small>Principal responsável legal e contato de emergência</small>
-               </div>
-               <div class="input-wrapper">
+                <input type="text" id="gardian" name="gardian" /><small
+                  >Principal responsável legal e contato de emergência</small
+                >
+              </div>
+              <div class="input-wrapper">
                 <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" placeholder="(45) 84626952">
-               </div>
-               <div class="input-wrapper">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="(45) 84626952"
+                />
+              </div>
+              <div class="input-wrapper">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@gmail.com"
+                  required
+                />
                 <div class="error">
-                  <img src="./icons/alert-circle.svg">
+                  <img src="./icons/alert-circle.svg" />
                   <span>Insira um email válido</span>
                 </div>
-               </div>
+              </div>
             </fieldset>
+
             <fieldset class="enroll-options">
               <legend>Opções de Matrícula</legend>
+
               <div class="input-wrapper">
                 <label>Selecione o turno de estudo</label>
                 <div class="radio-wrapper">
                   <div class="radio-inner">
                     <div class="radio-image"></div>
-                    <input type="radio" name="study-shift" value="morning" id="morning">
-                    <img src="./icons/sun-cloud-02.svg">
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="morning"
+                      id="morning"
+                    />
+                    <img src="./icons/sun-cloud-02.svg" />
                     <label for="morning">Manhã</label>
                   </div>
+
                   <div class="radio-inner">
                     <div class="radio-image"></div>
-                    <input type="radio" name="study-shift" value="evening" id="evening">
-                    <img src="./icons/sun-02.svg">
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      value="evening"
+                      id="evening"
+                    />
+                    <img src="./icons/sun-02.svg" />
                     <label for="evening">Tarde</label>
                   </div>
-
                 </div>
               </div>
             </fieldset>
@@ -152,7 +200,7 @@
               ambiente acolhedor, seguro e estimulante.
             </p>
           </header>
-          <img src="/assets/Illustration.svg">
+          <img src="/assets/Illustration.svg" />
         </div>
       </aside>
     </div>
